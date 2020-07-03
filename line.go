@@ -12,7 +12,7 @@ func MessageSend(token string, msg string) (string, error) {
 
 	result := ""
 
-	jsonStr := "message=" + "message=" + url.QueryEscape(msg)
+	jsonStr := "message=" + url.QueryEscape(msg)
 
 	req, err := http.NewRequest(
 		"POST",
